@@ -1,0 +1,1 @@
+import{create}from'zustand';export type View='3d'|'front'|'side'|'top';type S={paint:string;view:View;blueprint:boolean;setPaint:(v:string)=>void;setView:(v:View)=>void;setBlueprint:(v:boolean)=>void};export const useStore=create<S>(set=>({paint:'#dce2e8',view:'3d',blueprint:true,setPaint:paint=>set({paint}),setView:view=>set({view}),setBlueprint:blueprint=>set({blueprint})}));
